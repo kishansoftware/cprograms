@@ -1,0 +1,10 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = kishansoftware
+	email = kumarprince955961@gmail.com
+[safe]
+	directory = C:/TURBOC3/BIN
