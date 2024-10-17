@@ -1,19 +1,16 @@
 #include<stdio.h>
 int main()
 {
-	int a[]={3,4,3,3,4,3,4};
-	int size=sizeof(a)/sizeof(int);
-	int n,i;
-	int count=0;
-	printf("Enter value of the number");
+	int r,n;
+	printf("Enter value of number=");
 	scanf("%d",&n);
-	for(i=1;i<=size-1;i++)
+	while(n>0)
 	{
-		if(n==a[i])
-		{
-			count=count+1;
-		}
+		r=n%10;
+	printf("%d",r);
+		n=n/10;
+		
 	}
-	printf("%d",count);
+	//printf("%d",r);
 	return 0;
 }
